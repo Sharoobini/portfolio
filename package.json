@@ -8,14 +8,14 @@
   },
 
   "scripts": {
-  "dev": "vite",
-  "build": "node node_modules/vite/bin/vite.js build",
-  "start": "serve -s dist -l $PORT"
-},
-
+    "dev": "vite",
+    "build": "vite build",
+    "start": "serve -s dist -l $PORT"
+  },
 
   "dependencies": {
     "vite": "^6.3.5",
+    "serve": "^14.2.0",
 
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -62,10 +62,7 @@
     "recharts": "^2.15.2",
     "sonner": "^2.0.3",
     "tailwind-merge": "*",
-    "vaul": "^1.1.2",
-
-    "serve": "^14.2.0"
-
+    "vaul": "^1.1.2"
   },
 
   "devDependencies": {
