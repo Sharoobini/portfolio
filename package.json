@@ -10,9 +10,9 @@
   "scripts": {
   "dev": "vite",
   "build": "node node_modules/vite/bin/vite.js build",
-  "preview": "node node_modules/vite/bin/vite.js preview --host --port $PORT"
+  "start": "serve -s dist -l $PORT"
+},
 
-  },
 
   "dependencies": {
     "vite": "^6.3.5",
@@ -62,7 +62,10 @@
     "recharts": "^2.15.2",
     "sonner": "^2.0.3",
     "tailwind-merge": "*",
-    "vaul": "^1.1.2"
+    "vaul": "^1.1.2",
+
+    "serve": "^14.2.0"
+
   },
 
   "devDependencies": {
