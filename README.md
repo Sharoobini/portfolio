@@ -23,7 +23,7 @@ A modern, fully responsive personal portfolio website built to showcase your ski
 - Deployment: GitHub Pages / Netlify / Vercel
 
 ## Folder Structure (Example)
-
+----
 src/
  ├── components/
  │    ├── ImageWithFallback.jsx
@@ -38,6 +38,7 @@ src/
  │    ├── images/
  ├── App.jsx
  └── main.jsx
+ ----
 
 ## Installation
 
