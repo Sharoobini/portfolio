@@ -103,6 +103,7 @@ export function Skills() {
                   top: `${Math.floor(i / 5) * 25 + 12.5}%`,
                   width: '60px',
                   height: '60px',
+                  transformStyle: 'preserve-3d',
                 }}
                 animate={{
                   y: [0, -30, 0],
@@ -115,7 +116,6 @@ export function Skills() {
                   repeat: Infinity,
                   delay: i * 0.1,
                 }}
-                style={{ transformStyle: 'preserve-3d' }}
               >
                 <div
                   className={`w-full h-full bg-gradient-to-br ${

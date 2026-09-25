@@ -16,7 +16,7 @@ export function Contact() {
   });
 
   const socials = [
-    { icon: Mail, label: 'sharoobini233@gmail.com', link: 'sharoobini233@gmail.com', color: 'from-red-500 to-pink-500' },
+    { icon: Mail, label: 'sharoobini233@gmail.com', link: 'mailto:sharoobini233@gmail.com', color: 'from-red-500 to-pink-500' },
     { icon: Linkedin, label: 'LinkedIn Profile', link: 'https://www.linkedin.com/in/raja-annathurai-sharoobini', color: 'from-blue-500 to-cyan-500' },
     { icon: Github, label: 'GitHub: Sharoobini', link: 'https://github.com/Sharoobini', color: 'from-gray-500 to-slate-500' },
   ];

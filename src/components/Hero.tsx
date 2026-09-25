@@ -159,8 +159,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <motion.button
-              className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full"
+            <motion.a
+              href="#projects"
+              className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full cursor-pointer inline-block text-center"
               whileHover={{
                 scale: 1.05,
                 boxShadow: '0 20px 40px rgba(139, 92, 246, 0.4)',
@@ -168,9 +169,10 @@ export function Hero() {
               whileTap={{ scale: 0.95 }}
             >
               View My Work
-            </motion.button>
-            <motion.button
-              className="px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-full border border-white/20"
+            </motion.a>
+            <motion.a
+              href="#contact"
+              className="px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-full border border-white/20 cursor-pointer inline-block text-center"
               whileHover={{
                 scale: 1.05,
                 backgroundColor: 'rgba(255, 255, 255, 0.15)',
@@ -178,7 +180,7 @@ export function Hero() {
               whileTap={{ scale: 0.95 }}
             >
               Get In Touch
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           {/* 3D Floating Cards */}
@@ -215,8 +217,9 @@ export function Hero() {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        <motion.a
+          href="#about"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
@@ -224,7 +227,7 @@ export function Hero() {
             <span className="text-purple-300 text-sm">Scroll to explore</span>
             <ChevronDown className="text-white w-6 h-6" />
           </div>
-        </motion.div>
+        </motion.a>
       </div>
     </section>
   );
