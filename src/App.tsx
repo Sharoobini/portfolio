@@ -1,33 +1,44 @@
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Projects } from './components/Projects';
-import { Skills } from './components/Skills';
-import { Contact } from './components/Contact';
-import { AnimatedBackground } from './components/AnimatedBackground';
 import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
+import { Work } from './components/Work';
+import { CaseStudies } from './components/CaseStudies';
+import { Expertise } from './components/Expertise';
+import { Experience } from './components/Experience';
+import { About } from './components/About';
+import { Research } from './components/Research';
+import { GitHubActivity } from './components/GitHubActivity';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+import { LazyMotion, MotionConfig, domAnimation } from 'framer-motion';
+import { Education } from './components/Education';
+import { Orbs, ScrollProgress } from './components/effects';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900 relative">
-      <AnimatedBackground />
+    <LazyMotion features={domAnimation} strict>
+    <MotionConfig reducedMotion="user">
+    <div className="relative min-h-screen overflow-x-clip">
+      <a href="#about" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-[var(--color-text)] focus:px-4 focus:py-2 focus:text-sm focus:text-[var(--color-bg)]">
+        Skip to content
+      </a>
+      <Orbs />
+      <ScrollProgress />
       <Navbar />
-      <div className="relative z-10">
-        <div id="home">
-          <Hero />
-        </div>
-        <div id="about">
-          <About />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="skills">
-          <Skills />
-        </div>
-        <div id="contact">
-          <Contact />
-        </div>
-      </div>
+      <main className="relative z-10">
+        <Hero />
+        <About />
+        <Expertise />
+        <Experience />
+        <Work />
+        <CaseStudies />
+        <Research />
+        <Education />
+        <GitHubActivity />
+        <Contact />
+      </main>
+      <Footer />
     </div>
+    </MotionConfig>
+    </LazyMotion>
   );
 }
