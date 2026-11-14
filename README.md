@@ -1,96 +1,25 @@
-<<<<<<< HEAD
-=======
-# Personal Portfolio Website
+# Sharoobini — Portfolio
 
-A modern, fully responsive personal portfolio website built to showcase your skills, projects, experience, and professional profile. Designed with clean UI components, smooth animations, and easy customization.
+Personal portfolio of Raja Annadurai Sharoobini, built with React, TypeScript, Vite and Tailwind CSS.
 
-## Features
+## Run it
 
-- About Me Section – Profile image, description, and personal details
-- Projects Showcase – Display your best work with descriptions and links
-- Skills Section – Highlight technical skills, tools, and technologies
-- Experience Timeline – Show your professional journey
-- Contact Section – Contact form or social links
-- Responsive Design – Mobile-friendly and desktop-optimized
-- Image Fallback Handling – Uses a fallback when images fail to load
-- Clean Component Structure – Easy to maintain and customize
-
-## Tech Stack
-
-- React.js
-- Tailwind CSS
-- TypeScript / JavaScript
-- Vite / CRA / Next.js (depending on setup)
-- Git & GitHub
-- Deployment: GitHub Pages / Netlify / Vercel
-
-## Folder Structure (Example)
-----
-src/
- ├── components/
- │    ├── ImageWithFallback.jsx
- │    ├── Navbar.jsx
- │    ├── Footer.jsx
- ├── sections/
- │    ├── About.jsx
- │    ├── Projects.jsx
- │    ├── Skills.jsx
- │    ├── Contact.jsx
- ├── assets/
- │    ├── images/
- ├── App.jsx
- └── main.jsx
- ----
-
-## Installation
-
-Clone the repository:
-
-git clone https://github.com/Sharoobini/portfolio.git
-cd portfolio
-
-Install dependencies:
-
+```bash
 npm install
+npm run dev      # local development
+npm run build    # production build into build/
+```
 
-Run the development server:
+## Edit the content
 
-npm run dev
+Almost everything shown on the site lives in two files:
 
-Your website will be available at:
-http://localhost:5173/
+- `src/data.ts` — profile, hero numbers, projects, case studies, publications, experience, education
+- `src/tools.ts` — the logos in the toolbox
 
+Photos are in `src/assets/` (`sharoobini-portrait.webp`, `thesis.webp`) and project screenshots in `src/assets/projects/`.
+A project without a screenshot shows a lettered tile; add an `image` to its entry in `projectLibrary` to replace it.
 
+## Deploy
 
-## Build & Deployment
-
-Build for production:
-npm run build
-
-### Deploy to Vercel
-vercel deploy
-
-### Deploy to Netlify
-npm run build
-netlify deploy
-
-### Deploy to GitHub Pages
-npm run build
-git subtree push --prefix dist origin gh-pages
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome! Please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Author
-
-Sharoobini
-sharoobini233@gmail.com
-
-
-
->>>>>>> c07739c2293f752c62e4282e67666e2b696de73d
+Vercel: framework preset Vite, build command `npm run build`, output directory `build`.
